@@ -7,7 +7,7 @@ TransloNum is an Android Studio Library. This library Translate or Convert Engli
 # Usage
 
 ```XML
-	 <TextView
+    <TextView
         android:id="@+id/textSample"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,7 +31,7 @@ TransloNum is an Android Studio Library. This library Translate or Convert Engli
 ```
 
 ```kotlin
-	 val textSample:TextView = findViewById(R.id.textSample)
+	val textSample:TextView = findViewById(R.id.textSample)
         val textSample2:TextView = findViewById(R.id.textSample2)
 
         val number:String = TransloNum.getDigitFromEnglish("103435445","ar")
