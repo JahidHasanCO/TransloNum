@@ -1,11 +1,13 @@
 # TransloNum
+
+TransloNum is an Android Studio Library. This library Translate or Convert English Number Digits to Hindi, Arabic, Bangla Number Digits.
 [![](https://jitpack.io/v/JahidHasanCO/TransloNum.svg)](https://jitpack.io/#JahidHasanCO/TransloNum)
 
 How to get a Git project into your build:
 
 > Step 1. Add the JitPack repository to your build file
 
-#Gradle
+# Gradle
 Add it in your root build.gradle at the end of repositories:
 
 ```
@@ -17,7 +19,7 @@ Add it in your root build.gradle at the end of repositories:
 	}
  ```
 
-#Dependencies
+# Dependencies
 
 ```
   dependencies {
