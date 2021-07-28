@@ -1,5 +1,5 @@
 # TransloNum
-
+[![](https://jitpack.io/v/JahidHasanCO/TransloNum.svg)](https://jitpack.io/#JahidHasanCO/TransloNum)
 
 How to get a Git project into your build:
 
