@@ -29,7 +29,7 @@ object TransloNum {
             for (i in number.indices) {
                 if (Character.isDigit(number[i])) {
                     if (number[i].toInt() - 48 <= 9) {
-                        builder.append(arrOfCountry.get(number[i].toInt() - 48))
+                        builder.append("$arrOfCountry".get(number[i].toInt() - 48))
                     } else {
                         builder.append(number[i])
                     }
