@@ -57,6 +57,12 @@ TransloNum is an Android Studio Library. This library Translate or Convert Engli
         textSample2.text = currency
 ```
 
+```kotlin
+ 
+	val number:String = TransloNum.getEnglishDigitFrom("২১৩৪১২৪ ","bn")
+      
+```
+
 How to get a Git project into your build:
 
 > Step 1. Add the JitPack repository to your build file
