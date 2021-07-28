@@ -70,11 +70,9 @@ Also you can get English Numerical digit by Using this Method.
       
 ```
 
-How to get a Git project into your build:
-
-> Step 1. Add the JitPack repository to your build file
-
 # Gradle
+How to get a Git project into your build:
+> Step 1. Add the JitPack repository to your build file
 Add it in your root build.gradle at the end of repositories:
 
 ```
@@ -96,6 +94,9 @@ Add it in your root build.gradle at the end of repositories:
 
 Changelog
 ---------
+* **0.1.3**
+    * Add getEnglishDigitFrom() method for get English Numerical digit from any countries Numerical digit
+    * Improve getDigitFromEnglish() method.
 * **0.1.1**
     * Initial release
 
