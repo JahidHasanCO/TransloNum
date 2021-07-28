@@ -4,6 +4,11 @@ TransloNum is an Android Studio Library. This library Translate or Convert Engli
 [![](https://jitpack.io/v/JahidHasanCO/TransloNum.svg)](https://jitpack.io/#JahidHasanCO/TransloNum)
 
 
+**Country Code**
+ -  AR/ar (Arabic)
+ -  BN/bn (Bangla)
+ -  HI/hi (Hindi) 
+
 # Usage
 
 ```XML
