@@ -17,7 +17,7 @@ TransloNum is an Android Studio Library. This library Translate or Convert Engli
  # ScreenShot
  
 <p align="center">
-  <img src="https://github.com/JahidHasanCO/TransloNum/blob/master/ART/Screenshot_20210728-161700.png" />
+  <img src="https://github.com/JahidHasanCO/TransloNum/blob/master/ART/Screenshot_20210728-161700.png" width="270" height="585"/>
 </p>
 
 # Usage
