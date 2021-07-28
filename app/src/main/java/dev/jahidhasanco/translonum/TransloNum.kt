@@ -54,5 +54,86 @@ object TransloNum {
     }
 
 
+    public fun getEnglishDigitFrom(number: String?, countryCode: String): String{
+        var str = ""
 
+        if(countryCode == "AR" || countryCode == "ar"){
+            str = number?.let { ArabicToEnglish(it) }.toString()
+        }
+        else if(countryCode == "BN" || countryCode == "bn" || countryCode == "bd"){
+            str = number?.let { BanglaToEnglish(it) }.toString()
+        }
+
+        else if(countryCode == "HI" || countryCode == "hi"){
+            str = number?.let { HindiToEnglish(it) }.toString()
+        }
+        return str
+    }
+
+    private fun ArabicToEnglish(str: String):String {
+
+        var result = ""
+        var en = '0'
+        for (ch in str) {
+            en = ch
+            when (ch) {
+                '०' -> en = '0'
+                '१' -> en = '1'
+                '२' -> en = '2'
+                '३' -> en = '3'
+                '४' -> en = '4'
+                '५' -> en = '5'
+                '६' -> en = '6'
+                '७' -> en = '7'
+                '८' -> en = '8'
+                '९' -> en = '9'
+            }
+            result = "${result}$en"
+        }
+        return result
+    }
+
+    private fun BanglaToEnglish(str: String):String {
+        var result = ""
+        var en = '0'
+        for (ch in str) {
+            en = ch
+            when (ch) {
+                '۰' -> en = '০'
+                '۱' -> en = '১'
+                '۲' -> en = '২'
+                '۳' -> en = '৩'
+                '۴' -> en = '৪'
+                '۵' -> en = '৫'
+                '۶' -> en = '৬'
+                '۷' -> en = '৭'
+                '۸' -> en = '৮'
+                '۹' -> en = '৯'
+            }
+            result = "${result}$en"
+        }
+        return result
+    }
+
+    private fun HindiToEnglish(str: String):String {
+        var result = ""
+        var en = '0'
+        for (ch in str) {
+            en = ch
+            when (ch) {
+                '۰' -> en = '0'
+                '۱' -> en = '1'
+                '۲' -> en = '2'
+                '۳' -> en = '3'
+                '۴' -> en = '4'
+                '۵' -> en = '5'
+                '۶' -> en = '6'
+                '۷' -> en = '7'
+                '۸' -> en = '8'
+                '۹' -> en = '9'
+            }
+            result = "${result}$en"
+        }
+        return result
+    }
 }
