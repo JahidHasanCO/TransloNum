@@ -12,6 +12,13 @@ TransloNum is an Android Studio Library. This library Translate or Convert Engli
  -  AR/ar (Arabic)
  -  BN/bn (Bangla)
  -  HI/hi (Hindi) 
+ 
+ 
+ # ScreenShot
+ 
+<p align="center">
+  <img src="https://github.com/JahidHasanCO/TransloNum/blob/master/ART/Screenshot_20210728-161700.png" />
+</p>
 
 # Usage
 
