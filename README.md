@@ -3,6 +3,44 @@
 TransloNum is an Android Studio Library. This library Translate or Convert English Number Digits to Hindi, Arabic, Bangla Number Digits.
 [![](https://jitpack.io/v/JahidHasanCO/TransloNum.svg)](https://jitpack.io/#JahidHasanCO/TransloNum)
 
+
+# Usage
+
+```XML
+	 <TextView
+        android:id="@+id/textSample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSample2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSample" />
+```
+
+```kotlin
+	 val textSample:TextView = findViewById(R.id.textSample)
+        val textSample2:TextView = findViewById(R.id.textSample2)
+
+        val number:String = TransloNum.getDigitFromEnglish("103435445","ar")
+        val currency:String = TransloNum.convertCountryCurrency(12323.2342,"hi")
+
+        textSample.text = number
+        textSample2.text = currency
+```
+
 How to get a Git project into your build:
 
 > Step 1. Add the JitPack repository to your build file
