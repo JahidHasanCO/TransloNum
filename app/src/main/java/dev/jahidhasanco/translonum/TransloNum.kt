@@ -9,7 +9,7 @@ object TransloNum {
 
     public fun getDigitFromEnglish(number: String?, countryCode: String): String {
         if (number == null) return ""
-         var arrOfCountry: CharArray
+         var arrOfCountry: CharArray = charArrayOf()
 
         if (countryCode == "ar" ||  countryCode == "AR"){
             arrOfCountry = arabicDigits
