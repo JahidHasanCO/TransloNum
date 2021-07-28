@@ -20,6 +20,6 @@ Add it in your root build.gradle at the end of repositories:
 
 ```
   dependencies {
-	        implementation 'com.github.JahidHasanCO:TransloNum:1.0.0'
+	      implementation 'com.github.JahidHasanCO:TransloNum:0.1.0'
 	}
 ```
