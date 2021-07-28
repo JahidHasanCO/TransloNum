@@ -9,27 +9,25 @@ object TransloNum {
 
     public fun getDigitFromEnglish(number: String?, countryCode: String): String {
         if (number == null) return ""
-        var arrOfCountry = ""
+         var arrOfCountry: CharArray
 
         if (countryCode == "ar" ||  countryCode == "AR"){
-            arrOfCountry = "arabicDigits"
+            arrOfCountry = arabicDigits
         }
         if (countryCode == "bn" || countryCode == "bd" || countryCode == "BN"){
-            arrOfCountry = "banglaDigits"
+            arrOfCountry = banglaDigits
         }
         else if(countryCode == "hi" || countryCode == "HI"){
-            arrOfCountry = "hindiDigits"
+            arrOfCountry = hindiDigits
         }
-        else{
-            return ""
-        }
+       
 
         val builder = StringBuilder()
         try {
             for (i in number.indices) {
                 if (Character.isDigit(number[i])) {
                     if (number[i].toInt() - 48 <= 9) {
-                        builder.append("$arrOfCountry".get(number[i].toInt() - 48))
+                        builder.append(arrOfCountry.get(number[i].toInt() - 48))
                     } else {
                         builder.append(number[i])
                     }
