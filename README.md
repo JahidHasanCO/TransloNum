@@ -4,7 +4,7 @@
   <img src="https://github.com/JahidHasanCO/TransloNum/blob/master/ART/cover.jpg" />
 </p>
 
-TransloNum is an Android Studio Library. This library Translate or Convert English Number Digits to Hindi, Arabic, Bangla Number Digits.
+TransloNum is an Android Studio Library. This library Translate or Convert English Numerical digits to Hindi, Arabic, Bangla Numerical digits Also you can convert Hindi, Arabic, Bangla Numerical digit to English Numerical digit. 
 [![](https://jitpack.io/v/JahidHasanCO/TransloNum.svg)](https://jitpack.io/#JahidHasanCO/TransloNum)
 
 
@@ -13,6 +13,7 @@ TransloNum is an Android Studio Library. This library Translate or Convert Engli
  -  BN/bn (Bangla)
  -  HI/hi (Hindi) 
  
+ **By Using those Country Code you can transform those countries Numerical digit**
  
  # ScreenShot
  
@@ -45,6 +46,10 @@ TransloNum is an Android Studio Library. This library Translate or Convert Engli
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textSample" />
 ```
+You can get Any Numerical digit by Using getDigitFromEnglish() Method. This method required 2 parameters:
+	1. Number as a String
+	2. Country Code.
+same as you can convert currency....
 
 ```kotlin
 	val textSample:TextView = findViewById(R.id.textSample)
@@ -56,6 +61,8 @@ TransloNum is an Android Studio Library. This library Translate or Convert Engli
         textSample.text = number
         textSample2.text = currency
 ```
+
+Also you can get English Numerical digit by Using this Method.
 
 ```kotlin
  
