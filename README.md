@@ -1,5 +1,9 @@
 # TransloNum
 
+<p align="center">
+  <img src="https://github.com/JahidHasanCO/TransloNum/blob/master/ART/cover.jpg" />
+</p>
+
 TransloNum is an Android Studio Library. This library Translate or Convert English Number Digits to Hindi, Arabic, Bangla Number Digits.
 [![](https://jitpack.io/v/JahidHasanCO/TransloNum.svg)](https://jitpack.io/#JahidHasanCO/TransloNum)
 
