@@ -1,4 +1,4 @@
-name: Test, Review and Generate APK
+name: Android CI 
 on:
   push:
     branches: [ "master" ]
@@ -8,8 +8,32 @@ on:
 
 jobs:
 
+  test:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Cache gradle
+      - name: Cache Gradle and wrapper
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: cache-${{ runner.os }}-${{ matrix.jdk }}-gradle-${{ hashFiles('**/*.gradle*') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+      - name: Validate Gradle Wrapper
+        uses: gradle/wrapper-validation-action@v1
+
+      - name: Run Unit tests
+        run: bash ./gradlew test --stacktrace
+
   apk:
       name: Generate APK
+      needs: test
       runs-on: ubuntu-latest
 
       steps:
@@ -56,4 +80,4 @@ jobs:
             
             Created By @JahidHasanCo
           document: app-debug.apk
-          photo: https://media.giphy.com/media/A6aHBCFqlE0Rq/giphy.gif
+
